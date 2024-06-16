@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Father's Day Gift Card</title>
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+<header>
+    <h1>Father's Day Gift Card</h1>
+</header>
+
+<section class="card">
+    <h2>Create Your Gift Card</h2>
+    <form id="cardForm">
+        <label for="name">Your FATHER'S Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <button type="button" onclick="generateCard()">Generate Card</button>
+        
+    </form>
+    
+    <div id="cardOutput" class="card-output">
+        <h3>Dear <span id="cardName"></span>,</h3>
+        <p>Happy Father's Day! </p>
+            <p>Someone who carries pictures in his wallet where his money used to be.</p>
+            <p><em> "A son's first hero, a daughter's first love"</em></p>
+
+            <p>This card is specially made for you.</p>
+        
+        <p>Best wishes,</p>
+        <p>Your Loving Child</p>
+        <br>
+        
+    </div>
+    
+</section>
+
+<footer>
+    <p>&copy;Created by yasirBhai!</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
